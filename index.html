@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <div class="search">
+
+            <input type="text" id="city" placeholder="Enter City Name">
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+
+        </div>
+
+        <div class="weather-box">
+
+            <div class="left">
+
+                <h2 id="cityName">Delhi</h2>
+
+                <p id="condition">Partly Cloudy</p>
+
+                <h1 id="temp">31°C</h1>
+
+                <p id="feels">Feels Like 33°C</p>
+
+            </div>
+
+            <div class="right">
+
+                <div class="info">
+
+                    <i class="fa-solid fa-temperature-half"></i>
+
+                    <div>
+
+                        <span>Temperature</span>
+
+                        <h3 id="temperature">31°C</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <i class="fa-solid fa-droplet"></i>
+
+                    <div>
+
+                        <span>Humidity</span>
+
+                        <h3 id="humidity">65%</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <i class="fa-solid fa-wind"></i>
+
+                    <div>
+
+                        <span>Wind Speed</span>
+
+                        <h3 id="wind">8 km/h</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <i class="fa-solid fa-gauge"></i>
+
+                    <div>
+
+                        <span>Pressure</span>
+
+                        <h3 id="pressure">1008 hPa</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <i class="fa-regular fa-clock"></i>
+
+            <span id="time">Last Updated</span>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
